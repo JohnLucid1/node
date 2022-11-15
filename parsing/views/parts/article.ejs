@@ -1,0 +1,33 @@
+<style>
+    .new_news{
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+    }
+    .new{
+        color: #10140e;
+        background-color: #fffcec;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    h1, p h3{
+        text-align: center;
+    }
+</style>
+
+<div class="new_news">
+    <h1>
+        <%= title %>
+    </h1>
+    <% for (item of data) { %>
+        <div class="new">
+            <h3>
+                <%= item.title %>
+            </h3>
+            <p>
+                <%= item.content %>
+            </p>
+            <a href="<%= item.link %>">Ссылка</a>
+        </div>
+        <% } %>
+</div>

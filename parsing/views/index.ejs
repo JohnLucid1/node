@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            color: #10140e;
+            background-color: #add2f6;
+        }
+        html{
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #news-selector{ 
+            width: 400px;
+            height: 200px;
+            background-color: #fffcec;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        #news-selector>div {
+            margin-bottom: 10px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input,
+        select,
+        button {
+            outline: none;
+            border: none;
+            background-color: revert;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            display: block;
+        }
+
+        .new {
+            margin-bottom: 100px;
+        }
+
+        .new:last-of-type {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include(partial); %>
+</body>
+
+</html>
