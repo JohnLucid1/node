@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+body{
+    height: 100%;
+}
+*{
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box;
+    /* outline: 1px solid limegreen !important; */
+}
+.App{
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+    background-color: #181A1B ;
+    color: white;
+}
+.MainApp{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.Messages{
+    widht: 300px;
+    display: flex;
+}
+
+input{
+    background-color: #181A1B;
+    color: white;
+    margin: 5px 0px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+
+}
+
+.MainButton{
+    display: flex;
+    justify-content: center;
+}
+
+.SendButton{
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #181A1B;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    widht: 100%;
+    color: white;
+    transition: 0.1s linear;
+}
+
+.SendButton:hover{
+    padding: 5px 15px;
+    background-color: grey;
+    color: black;
+    font-weight: 700;
+    border: 3px solid white;
+}
+
+.MainMessages{
+    widht: 40%;
+    background-color: #635994;
+    margin-bottom: 10px;
+    text-decoration: underline;
+
+}
+
+.messages{
+    widht: 50%;
+}
